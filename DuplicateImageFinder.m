@@ -1,7 +1,7 @@
 % Program to find duplicate image
 qi=rgb2gray(imread('brick1.png'));
 lbpQuery=extractLBPFeatures(qi,'Upright',false);
-%file_location=input('Enter the location where you want to check the duplicate images');
+cd 'C:\Users\vps\Desktop\DuplicateImage\testImages';
 imagefiles=dir('*.png');
 number_of_images=length(imagefiles);
 feature=zeros(number_of_images,1);
